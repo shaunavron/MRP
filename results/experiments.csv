@@ -1,0 +1,14 @@
+model,learning_rate,batch_size,epochs,dropout,unfrozen_layers,best_epoch,val_loss,val_accuracy,val_precision,val_recall,val_auc,test_loss,test_accuracy,test_precision,test_recall,test_auc
+MedicalNet,1e-05,4,20,0.0,layer4 + classification_head,12,0.6146153608957926,0.8260869565217391,0.7142857142857143,1.0,0.8384615384615385,0.829827015598615,0.625,0.5333333333333333,0.8,0.7071428571428571
+MedicalNet,0.0001,4,20,0.0,layer4 + classification_head,4,0.6380658547083536,0.6956521739130435,0.6666666666666666,0.6,0.7000000000000001
+MedicalNet,1e-05,4,20,0.0,classification_head,20,0.6949989298979441,0.5652173913043478,0.0,0.0,0.4538461538461539
+MedicalNet,1e-04,4,20,0.0,classification_head,5,0.6889,0.5652,0.0,0.0,0.5308
+MedicalNet,1e-04,4,20,0.0,layer3 + layer4 + classification_head,6,0.6493,0.6087,0.0,0.0,0.7000
+MedicalNet,1e-05,4,20,0.0,layer3 + layer4 + classification_head,1,0.6851,0.5625,0.0,0.0,0.6308
+MedicalNet,1e-05,2,20,0.0,layer3 + layer4 + classification_head,13,0.5280,0.7826,0.0,0.0,0.8154
+MedicalNet,1e-04,2,20,0.0,layer3 + layer4 + classification_head,9,0.5535,0.7391,0.0,0.0,0.8462
+MedicalNet,1e-04,2,20,0.0,layer4 + classification_head,7,0.5572,0.7391,0.0,0.0,0.8462
+MedicalNet,1e-05,2,20,0.0,layer4 + classification_head,6,0.6284,0.7826,0.0,0.0,0.7308
+MedicalNet,1e-05,2,20,0.0,classification_head,5,0.6922,0.5652,0.0,0.0,0.3231MedicalNet,1e-05,2,20,0.0,layer4 + classification_head,1,0.6476336568593979,0.6086956521739131,1.0,0.1,0.8615384615384616
+MedicalNet,1e-05,2,20,0.0,layer4 + classification_head,1,0.6476336568593979,0.6086956521739131,1.0,0.1,0.8615384615384616
+MedicalNet,1e-06,2,20,0.0,layer4 + classification_head,19,0.5571628709634145,0.8260869565217391,0.875,0.7,0.8692307692307693
