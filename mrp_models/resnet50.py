@@ -1,12 +1,12 @@
-
+import os
 import tensorflow as tf
 from tensorflow.keras import models, layers
 
 
 class ResNet50Model:
     """
-    Contains methods for building, training, and evaluating a CNN model using ResNet50 architecture. 
-    """    
+    Contains methods for building, training, and evaluating a CNN model using ResNet50 architecture.
+    """
     def __init__(self):
         self.model = None
         self.history = None
@@ -31,7 +31,8 @@ class ResNet50Model:
 
     def train_model(self, train_data, val_data, epochs=20, callbacks=None):
         self.history = self.model.fit(train_data, validation_data=val_data, epochs=epochs, callbacks=callbacks)
-        self.model.save("models/resnet50.keras")
+        os.makedirs("saved_models", exist_ok=True)
+        self.model.save("saved_models/resnet50.keras")
 
     def evaluate_model(self, test_data):
         return self.model.evaluate(test_data)
