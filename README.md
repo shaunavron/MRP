@@ -76,6 +76,12 @@ Main dependencies include:
 
 See `requirements.txt` for the Python package requirements.
 
+## Installation
+
+Install the required Python packages using:
+
+pip install -r requirements.txt
+
 ## Notes
 
 The OASIS MRI data are not distributed with this repository due to data-access requirements.
